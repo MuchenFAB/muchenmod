@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "muchenmod",
+	"version": "1",
+	"name": "Muchen Mod",
+	"description": "Muchen's First Mod!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/muchen-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"shop.sbmuchen.www.MuchenMod"
+		],
+		"fabric-datagen": [
+			"shop.sbmuchen.www.MuchenModDataGenerator"
+		]
+	},
+	"mixins": [
+		"muchen-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
